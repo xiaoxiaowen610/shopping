@@ -20,7 +20,7 @@ export default function ProductPage() {
   const stock = variant?.stock ?? 0
   const related = products.filter((item) => item.id !== product.id && item.category === product.category).slice(0, 3)
   function handleAdd() {
-    if (!variant || stock <= 0) return
+    if (!product || !variant || stock <= 0) return
     addItem(product, variant.value, Math.min(quantity, stock)); setAdded(true)
     window.setTimeout(() => setAdded(false), 1800)
   }
