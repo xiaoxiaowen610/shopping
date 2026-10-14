@@ -1,5 +1,5 @@
 import { ArrowDownRight, ArrowRight, SlidersHorizontal } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import { categories, products } from '../data/products'
